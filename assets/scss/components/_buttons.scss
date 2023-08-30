@@ -1,0 +1,17 @@
+.my-btn-primary-hover:hover{
+    color: #FBFF22;
+}
+.my-btn-disabled{
+    background-color: #9A9A9A;
+    border-color: #9A9A9A;
+}
+.my-btn-contact:hover{
+    i{
+        color: $secondary;
+    }
+    span{
+        text-decoration: underline;
+        color: $primary;
+    }
+
+}

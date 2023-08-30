@@ -1,0 +1,31 @@
+.my-outline-title-eng{
+    border: 2px solid $primary;
+    font-size: 24px;
+    padding: 16px 12px;
+    margin-bottom: 24px;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include media-breakpoint-up(lg){
+        border-width: 3px;
+        padding: 24px 32px;
+        font-size: 64px;
+        margin-bottom: 32px;
+    }   
+}
+.my-outline-title-tc{
+    font-size: 16px;
+    font-weight: bold;
+    @include media-breakpoint-up(lg){
+        font-size: 32px;
+    }
+}
+.my-card-header{
+    color: $primary;
+    font-size: 32px;
+    line-height: normal;
+    border-bottom: 3px solid $primary;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+}

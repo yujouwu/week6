@@ -1,0 +1,123 @@
+// header navbar
+.my-logo {
+  max-width: 40px;
+  max-height: 40px;
+  object-fit: cover;
+}
+
+.my-header {
+  .my-form {
+    max-width: 207px;
+    // @include pad{
+    //   width: 335px;
+    // }
+  }
+
+  .my-collapse {
+    position: absolute;
+    top: 66px;
+    left: 0px;
+    border-bottom: 2px solid $primary;
+    width: 100%;
+    background-color: $body-bg;
+
+    @include media-breakpoint-up(lg) {
+      border-bottom: none;
+      background-color: transparent;
+    }
+  }
+}
+.my-banner {
+  background-image: url(../../../assets/images/event/13.jpg);
+  height: 350px;
+  background-size: cover;
+  background-position: center center;
+  @include media-breakpoint-up(md) {
+    height: 518px;
+  }
+}
+.my-cate-img {
+  max-width: 40px;
+  max-height: 40px;
+  margin-bottom: 8px;
+  @include media-breakpoint-up(md) {
+    max-width: 80px;
+    max-height: 80px;
+    margin-bottom: 12px;
+  }
+}
+.my-cate-link {
+  height: 112px;
+  @include media-breakpoint-up(md) {
+    height: 196px;
+  }
+}
+.my-card-img {
+  height: 210px;
+  width: 100%;
+  @include media-breakpoint-up(xl) {
+    height: 255px;
+  }
+}
+.my-card-sparkler {
+  width: 20px;
+  height: 20px;
+}
+.my-card-footer-hover:hover:before {
+  content: "";
+  position: absolute;
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+  background-color: $secondary;
+  z-index: -1;
+  left: -10px;
+  top: -3.5px;
+}
+.my-truncate {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.my-online-img{
+  height: 158px;
+  @include media-breakpoint-up(md){
+    height: 100%;
+  }
+}
+.my-tag-item{
+  border-left: 4px solid $primary;
+  position: relative;
+  font-size: 14px;
+  font-weight: bold;
+  &:hover, .active{
+    border-left: 4px solid $secondary;
+    &::before{
+      content: "";
+      position: absolute;
+      width: 4px;
+      height: calc(100% + 4px);
+      background-color: $secondary;
+      top: -2px;
+      left: -4px;
+    }
+  }
+}
+.my-album-img{
+  height: 267px;
+  @include media-breakpoint-up(lg){
+    height: 274px;
+  }
+}
+.my-album-tag{
+  transform: translate(-50%, -50%) rotate(-4deg);
+}
+.my-album-item{
+  &:nth-child(2n){
+    transform: rotate(2deg);
+  }
+  &:nth-child(3){
+    transform: rotate(-2deg);
+  }
+}
