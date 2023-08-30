@@ -1,0 +1,73 @@
+$utilities: map-merge(
+  $utilities, (
+    "border": map-merge(
+      map-get($utilities, "border"),
+      ( responsive: true ),
+    ),
+    "border-top": map-merge(
+      map-get($utilities, "border-top"),
+      ( responsive: true ),
+    ),
+    "border-end": map-merge(
+      map-get($utilities, "border-end"),
+      ( 
+        responsive: true,
+        values: map-merge(
+          map-get(map-get($utilities, "border-end"), "values"),
+          (
+            1:1px solid,
+            2:2px solid,
+            3:3px solid,
+            4:4px solid,
+            5:5px solid,
+          ),
+        ) 
+      ),
+    ),
+    "border-bottom": map-merge(
+      map-get($utilities, "border-bottom"),
+      ( responsive: true ),
+    ),
+    "border-start": map-merge(
+      map-get($utilities, "border-start"),
+      ( 
+        responsive: true,
+        values: map-merge(
+          map-get(map-get($utilities, "border-start"), "values"),
+          (
+            1:1px solid,
+            2:2px solid,
+            3:3px solid,
+            4:4px solid,
+            5:5px solid,
+          ),
+        ) 
+      ),
+    ),
+    "border-width": map-merge(
+      map-get($utilities, "border-width"),
+      ( responsive: true ),
+    ),
+    "position": map-merge(
+      map-get($utilities, "position"),
+      ( responsive: true ),
+    ),
+    "font-size": map-merge(
+        map-get($utilities, "font-size"),
+        ( responsive: true ),
+    ),
+    "text-align": map-merge(
+        map-get($utilities, "text-align"),
+        (
+        values: map-merge(
+          map-get(map-get($utilities, "text-align"), "values"),
+          (justify: justify),
+        ),
+      ),
+    ),
+    "text-decoration": map-merge(
+      map-get($utilities, "text-decoration"),
+      ( state: hover ),
+    ),
+  )
+);

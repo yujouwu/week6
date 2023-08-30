@@ -8,11 +8,10 @@
 .my-header {
   .my-form {
     max-width: 207px;
-    // @include pad{
-    //   width: 335px;
-    // }
+    @include media-breakpoint-up(lg){
+      max-width: 335px;
+    }
   }
-
   .my-collapse {
     position: absolute;
     top: 66px;
