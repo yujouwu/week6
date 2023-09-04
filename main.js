@@ -1,5 +1,6 @@
 import './assets/scss/all.scss';
-import 'bootstrap/dist/js/bootstrap.min.js';
+import bootstrap from "bootstrap/dist/js/bootstrap.min.js";
+
 
 // swiper js
 import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
@@ -25,3 +26,15 @@ const swiper = new Swiper(".mySwiper", {
       disableOnInteraction: false
     }
   });
+
+// 點擊首頁 recent 近期活動卡片 內 開賣中 按鈕時，不觸發 卡片的 a 連結 
+const membershipModalId = document.getElementById("membershipModal");
+const membershipModalObject = new bootstrap.Modal(membershipModalId);
+const membershipBtns = document.querySelectorAll(".js-membership-modal-btn");
+
+membershipBtns.forEach((item) => {
+  item.addEventListener("click", (e) => {
+    e.preventDefault();
+    membershipModalObject.show();
+  });
+});

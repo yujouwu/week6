@@ -1,0 +1,30 @@
+<li class="col-12 col-md-6 col-lg-4" data-aos="fade-up">
+  <a class="text-primary" href="#">
+    <h2 class="fs-4 lh-normal border-bottom border-3 pb-2 mb-5 fs-xl-3 pb-xl-3 mb-xl-3 text-uppercase ">
+      <%= date %>
+    </h2>
+    <img class="img-fluid object-fit-cover my-card-img mb-2 card-img-top" src=<%=img %>
+    alt="event card image">
+    <div class="card-body pt-2 pb-5 pt-xl-5">
+      <h4 class="card-title fw-bold fs-8 fs-xl-5 mb-2 mb-xl-3">
+        <%= title %>
+      </h4>
+      <p class="card-text fs-9 ff-sans text-justify  my-truncate">
+        <%= intro %>
+      </p>
+    </div>
+    <div class="card-footer d-flex justify-content-between align-items-center border-top border-bottom border-2 py-2">
+      <button type="button" class="btn p-0">
+        <img class="img-fluid my-sparkler" src="../assets/images/sparkler.png" alt="sparkler icon">
+        <span class="fw-bold align-text-top text-decoration-underline-hover">
+          <%= tag %>
+        </span>
+      </button>
+      <button class="btn p-0 text-primary fw-bold ff-sans my-hover-circle position-relative js-membership-modal-btn"
+        type="button" data-bs-toggle="modal" data-bs-target="#membershipModal">
+        開賣中<i class="icofont-rounded-double-right"></i>
+      </button>
+    </div>
+  </a>
+</li>
+

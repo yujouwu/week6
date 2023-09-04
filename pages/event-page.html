@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EVENT</title>
+    <%- include('./layout/head-link'); -%>
+</head>
+
+<body>
+    <!-- header -->
+    <%- include('./layout/header'); -%>
+        <!-- main -->
+        <main>
+            <div class="container">
+                <div class="mb-3 mb-lg-8">
+                    <%- include('./layout/section-title',{titleEng:"event", titleTC:"所有活動"}); -%>
+                </div>
+                <ul class="list-unstyled d-flex flex-wrap gap-2 mb-8 mt-lg-8">
+                    <li><a href="#" class="my-tag">演出</a></li>
+                    <li><a href="#" class="my-tag">音樂</a></li>
+                    <li><a href="#" class="my-tag">舞蹈</a></li>
+                    <li><a href="#" class="my-tag">戲劇</a></li>
+                    <li><a href="#" class="my-tag">音樂會</a></li>
+                    <li><a href="#" class="my-tag">課程講座</a></li>
+                    <li><a href="#" class="my-tag">社群活動</a></li>
+                    <li><a href="#" class="my-tag">展覽</a></li>
+                    <li><a href="#" class="my-tag">研討會</a></li>
+                    <li><a href="#" class="my-tag">電影</a></li>
+                    <li><a href="#" class="my-tag">電音派對</a></li>
+                    <li><a href="#" class="my-tag">遊戲競賽</a></li>
+                    <li><a href="#" class="my-tag">親子</a></li>
+                    <li><a href="#" class="my-tag">藝文活動</a></li>
+                    <li><a href="#" class="my-tag">運動</a></li>
+                    <li><a href="#" class="my-tag">交通旅遊</a></li>
+                    <li><a href="#" class="my-tag">美食</a></li>
+                    <li><a href="#" class="my-tag">資訊科技</a></li>
+                    <li><a href="#" class="my-tag">聯誼</a></li>
+                    <li><a href="#" class="my-tag">戶外</a></li>
+                    <li><a href="#" class="my-tag">線上活動</a></li>
+                </ul>
+                <ul class="list-unstyled row gy-7 gy-lg-11 mb-8 mb-lg-12">
+                    <%- include('./layout/event-card-section-1'); -%>
+                        <%- include('./layout/event-card-section-2'); -%>
+                </ul>
+            </div>
+        </main>
+        <nav aria-label="Page navigation">
+            <div class="container">
+                <ul class="pagination justify-content-center ff-serif fw-bold">
+                    <li class="page-item">
+                        <a class="page-link p-0 d-flex justify-content-center align-items-center" href="#">
+                            <i class="icofont-arrow-left fs-8"></i>
+                        </a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link  p-0 d-flex justify-content-center align-items-center " href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link  p-0 d-flex justify-content-center align-items-center active" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link  p-0 d-flex justify-content-center align-items-center " href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link  p-0 d-flex justify-content-center align-items-center " href="#">4</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link  p-0 d-flex justify-content-center align-items-center " href="#">5</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link p-0 d-flex justify-content-center align-items-center" href="#">
+                            <i class="icofont-arrow-right fs-8"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- footer -->
+        <%- include('./layout/footer'); -%>
+
+          <!-- javascript -->
+        <%- include('./layout/script'); -%>
+        <script type="module" src="../main.js"></script>
+</body>
+<%- include('./layout/membership-modal'); -%>
+
+</html>
