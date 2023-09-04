@@ -29723,6 +29723,7 @@ body {
   border-bottom: 2px solid #030303;
   width: 100%;
   background-color: #F3F1E5;
+  z-index: 1;
 }
 
 @media (min-width: 992px) {
